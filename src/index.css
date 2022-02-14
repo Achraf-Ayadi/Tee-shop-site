@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #698f3f;
+  --secondaryColor: #fca311;
+  --mainDark: #3a3e3b;
+  --mainWhite: #fff;
+  --mainGrey: #f1f5f8;
+  --slantedText: 'Grand Hotel', cursive;
+  --mainTransition: all 0.3s linear;
+  --letterSpacing: 0.5rem;
+}
+body {
+  font-family: 'Catamaran', sans-serif;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  line-height: 1.5;
+}
+.color-line {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--primaryColor),
+    var(--secondaryColor),
+    var(--primaryColor)
+  );
+}
