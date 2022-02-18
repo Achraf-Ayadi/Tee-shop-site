@@ -5,6 +5,7 @@ import {
   SkillsHome,
   ProductsHome,
   AboutHome,
+  Services,
 } from '../components/index'
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
       <SkillsHome />
       <AboutHome />
       <ProductsHome />
+      <Services />
       <Contact />
     </>
   )

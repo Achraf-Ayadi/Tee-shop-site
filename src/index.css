@@ -5,10 +5,14 @@
 }
 :root {
   --primaryColor: #698f3f;
+  --clr-primary-light: #beed8c;
   --secondaryColor: #fca311;
   --mainDark: #3a3e3b;
   --mainWhite: #fff;
   --mainGrey: #f1f5f8;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --ff-primary: 'Catamaran', sans-serif;
   --slantedText: 'Grand Hotel', cursive;
   --mainTransition: all 0.3s linear;
   --letterSpacing: 0.5rem;
@@ -16,7 +20,7 @@
 body {
   font-family: 'Catamaran', sans-serif;
   background: var(--mainWhite);
-  color: var(--mainDark);
+  color: var(--clr-grey-5);
   line-height: 1.5;
 }
 .color-line {
@@ -27,4 +31,55 @@ body {
     var(--secondaryColor),
     var(--primaryColor)
   );
+}
+
+/* helper/utility classes */
+
+a {
+  text-decoration: none;
+}
+.text-white {
+  color: var(--mainWhite);
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--primaryColor);
+}
+
+.section-center {
+  padding: 4rem 1rem;
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.subtitle {
+  font-size: 2rem;
+  font-family: var(--slantedText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  color: var(--primaryColor);
+}
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  background-color: var(--clr-primary-light);
+  color: var(--primaryColor);
 }
