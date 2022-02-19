@@ -21,8 +21,7 @@ const Wrapper = styled.div`
     cursor: pointer;
     animation: bounce 2s ease infinite;
   }
-  .icon:hover {
-  }
+  
 
   @keyframes bounce{
     0% {

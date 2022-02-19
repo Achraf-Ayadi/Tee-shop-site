@@ -88,5 +88,24 @@ letter-spacing: 0.2rem;
   .product-price{
 color:var(--primaryColor);
   }
+@media screen and (max-width: 1200px) {
+   
+   .container{
+      grid-template-columns: 1fr;
+   } 
+   .products{
+grid-template-columns: repeat(2, 1fr);
+      margin: 1rem ;
+
+   }
+
+  
+  
+  @media screen and (max-width: 650px){
+    .products{
+grid-template-columns: repeat(1, 1fr);
+   }
+
+  }
 `
 export default ProductsHome

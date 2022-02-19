@@ -6,6 +6,7 @@ import {
   ProductsHome,
   AboutHome,
   Services,
+  Footer,
 } from '../components/index'
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       <ProductsHome />
       <Services />
       <Contact />
+      <Footer />
     </>
   )
 }
